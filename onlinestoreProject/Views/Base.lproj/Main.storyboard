@@ -1,0 +1,1401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24128" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TDS-T1-5mI">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PlaypenSansArabic-Bold.ttf">
+            <string>PlaypenSansArabic-Bold</string>
+        </array>
+        <array key="PlaypenSansArabic-ExtraBold.ttf">
+            <string>PlaypenSansArabic-ExtraBold</string>
+        </array>
+        <array key="PlaypenSansArabic-Medium.ttf">
+            <string>PlaypenSansArabic-Medium</string>
+        </array>
+        <array key="PlaypenSansArabic-Regular.ttf">
+            <string>PlaypenSansArabic-Regular</string>
+        </array>
+        <array key="PlaypenSansArabic-SemiBold.ttf">
+            <string>PlaypenSansArabic-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Login Page View Controller-->
+        <scene sceneID="Zep-Lx-KkD">
+            <objects>
+                <viewController storyboardIdentifier="loginPageViewController" id="Zzb-i8-pya" customClass="loginPageViewController" customModule="onlinestoreProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AJ9-Pw-SUO">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="مرحبا بك !! " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ir7-4T-oY0">
+                                <rect key="frame" x="181" y="160" width="205" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="39"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="سجل دخولك لمتابعة التسوق " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Phy-Ec-ruC">
+                                <rect key="frame" x="81" y="212" width="296" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="البريد الالكتروني" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PcJ-NU-0t0">
+                                <rect key="frame" x="225" y="311" width="135" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="hussein@gmail.com" borderStyle="roundedRect" placeholder="البريد الالكتروني" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RxL-mS-xuw">
+                                <rect key="frame" x="42" y="338" width="315" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="كلمه المرور" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgy-d8-exb">
+                                <rect key="frame" x="244" y="380" width="103" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ليس لديك حساب؟" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQc-w8-Ljp">
+                                <rect key="frame" x="172" y="662" width="140" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" borderStyle="roundedRect" placeholder="كلمه المرور" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C15-mY-bhG">
+                                <rect key="frame" x="42" y="407" width="315" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyX-W7-Lrk">
+                                <rect key="frame" x="56" y="521" width="286" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="تسجيل الدخول">
+                                    <fontDescription key="titleFontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="21"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="loginButtonTapped:" destination="Zzb-i8-pya" eventType="touchUpInside" id="8Kd-5z-68c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rY0-Bf-Cqt">
+                                <rect key="frame" x="66" y="647" width="107" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="سجل الآن">
+                                    <fontDescription key="titleFontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="21"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="1La-TS-3ZE" kind="show" id="rDC-kc-5Di"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7mD-Cv-Qr7"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5aB-md-zgA"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="RxL-mS-xuw" id="Smb-iJ-vbe"/>
+                        <outlet property="passwordTextField" destination="C15-mY-bhG" id="e0c-6n-brg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="838-Qb-pPk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-869.46564885496184" y="224.64788732394368"/>
+        </scene>
+        <!--Createacc View Controller-->
+        <scene sceneID="mkG-Rv-12V">
+            <objects>
+                <viewController id="1La-TS-3ZE" customClass="createaccViewController" customModule="onlinestoreProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p5Y-iL-qkJ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="إنشاء حساب جديد" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNw-nG-1H5">
+                                <rect key="frame" x="86" y="150" width="291" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="39"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ادخل تفاصيلك للبدء" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0N-eq-rvh">
+                                <rect key="frame" x="168" y="205" width="209" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="البريد الالكتروني" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8Q-8p-YvB">
+                                <rect key="frame" x="252" y="345" width="102" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="البريد الالكتروني" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IHA-M1-Z0W">
+                                <rect key="frame" x="39" y="372" width="315" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="الاسم الكامل" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o35-3H-Pc4">
+                                <rect key="frame" x="39" y="303" width="315" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="كلمه المرور" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EjA-jm-kFv">
+                                <rect key="frame" x="278" y="414" width="74" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="لديك حساب بالفعل ؟ " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCT-tf-a7T">
+                                <rect key="frame" x="203" y="668" width="146" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="كلمه المرور" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QzS-z6-v2D">
+                                <rect key="frame" x="39" y="441" width="315" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUJ-oo-rFd">
+                                <rect key="frame" x="63" y="659" width="138" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="تسجيل الدخول ">
+                                    <fontDescription key="titleFontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="19"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="goToLoginpageTapped:" destination="1La-TS-3ZE" eventType="touchUpInside" id="tcn-h6-cDL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="الاسم الكامل" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ziI-Wk-tR3">
+                                <rect key="frame" x="266" y="278" width="88" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCg-ti-xqN">
+                                <rect key="frame" x="53" y="530" width="286" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="انشاء حساب"/>
+                                <connections>
+                                    <action selector="createAccTapped:" destination="1La-TS-3ZE" eventType="touchUpInside" id="Fqo-ZL-rYU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QA4-6f-sh6"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="O4k-o3-nmM"/>
+                    <connections>
+                        <outlet property="EmailLabel" destination="IHA-M1-Z0W" id="Yxu-MU-5nE"/>
+                        <outlet property="Namelabel" destination="o35-3H-Pc4" id="UIg-DI-yOU"/>
+                        <outlet property="passwordLabel" destination="QzS-z6-v2D" id="5jt-jz-vKV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zFE-I3-HDz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2025" y="961"/>
+        </scene>
+        <!--Change Name View Controller-->
+        <scene sceneID="lWZ-2n-8XH">
+            <objects>
+                <viewController id="2OU-tL-Umy" customClass="ChangeNameViewController" customModule="onlinestoreProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ysd-lc-sLH">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تغيير اسم المستخدم" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6Z-io-4Fa">
+                                <rect key="frame" x="50" y="196" width="266" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="266" id="QB4-s3-5zF"/>
+                                    <constraint firstAttribute="height" constant="55" id="whN-xG-p4d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ادخل الاسم الجديد هنا" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yja-L6-LxZ">
+                                <rect key="frame" x="24" y="275" width="318" height="50"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="IZK-aY-KgN"/>
+                                    <constraint firstAttribute="width" constant="318" id="U4a-gx-lCH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3G-BD-RiP">
+                                <rect key="frame" x="24" y="681" width="333" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="حفظ التغيرات">
+                                    <fontDescription key="titleFontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="saveButtonTapped:" destination="2OU-tL-Umy" eventType="touchUpInside" id="uyQ-as-lwJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="G4a-uj-NW8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="G4a-uj-NW8" firstAttribute="trailing" secondItem="yja-L6-LxZ" secondAttribute="trailing" constant="24" id="APF-La-3vG"/>
+                            <constraint firstItem="n6Z-io-4Fa" firstAttribute="top" secondItem="G4a-uj-NW8" secondAttribute="top" constant="24" id="FyQ-gY-gX2"/>
+                            <constraint firstItem="G4a-uj-NW8" firstAttribute="trailing" secondItem="n6Z-io-4Fa" secondAttribute="trailing" constant="50" id="Nhn-3p-ZRd"/>
+                            <constraint firstItem="yja-L6-LxZ" firstAttribute="top" secondItem="n6Z-io-4Fa" secondAttribute="bottom" constant="24" id="XSd-KO-caF"/>
+                            <constraint firstItem="yja-L6-LxZ" firstAttribute="leading" secondItem="G4a-uj-NW8" secondAttribute="leading" constant="24" id="ZSn-xi-hgG"/>
+                            <constraint firstItem="n6Z-io-4Fa" firstAttribute="leading" secondItem="G4a-uj-NW8" secondAttribute="leading" constant="50" id="jck-bb-U0R"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2ri-jP-b0S"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="yja-L6-LxZ" id="jkB-3O-s01"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b9u-XS-oja" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-795" y="2803"/>
+        </scene>
+        <!--My Orders View Controller-->
+        <scene sceneID="S12-BE-iYh">
+            <objects>
+                <viewController id="gHg-HY-OQe" customClass="MyOrdersViewController" customModule="onlinestoreProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YsM-He-Ifg">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="طلباتي السابقة" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efa-pi-2JA">
+                                <rect key="frame" x="50" y="35" width="292" height="48"/>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-SemiBold" family="Playpen Sans Arabic" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="cxN-sZ-H5r">
+                                <rect key="frame" x="0.0" y="83" width="393" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="710" id="Jah-gu-cWP"/>
+                                    <constraint firstAttribute="width" constant="393" id="lpQ-EI-WUm"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="orderCell" rowHeight="147" id="NUb-rh-Unp" customClass="OrderCell" customModule="onlinestoreProject" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="147"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NUb-rh-Unp" id="BAR-sA-h48">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="147"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CyP-Op-jjJ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="147"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="طلب #12345" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktB-XA-SEz">
+                                                            <rect key="frame" x="90" y="8" width="212" height="45"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="PlaypenSansArabic-SemiBold" family="Playpen Sans Arabic" pointSize="25"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="الإجمالي: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tw9-f3-Hxr">
+                                                            <rect key="frame" x="278" y="94" width="107" height="45"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="PlaypenSansArabic-SemiBold" family="Playpen Sans Arabic" pointSize="25"/>
+                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" 150 JD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nE8-vS-BD8">
+                                                            <rect key="frame" x="147" y="94" width="132" height="45"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="PlaypenSansArabic-SemiBold" family="Playpen Sans Arabic" pointSize="25"/>
+                                                            <color key="textColor" name="AccentColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="تاريخ الطلب" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qm-4r-hug">
+                                                            <rect key="frame" x="136" y="54" width="120" height="32"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="PlaypenSansArabic-SemiBold" family="Playpen Sans Arabic" pointSize="15"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="393" id="any-l2-9mq"/>
+                                                        <constraint firstAttribute="height" constant="147" id="nTj-YI-Joh"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="CyP-Op-jjJ" secondAttribute="bottom" id="3MA-3e-imZ"/>
+                                                <constraint firstAttribute="trailing" secondItem="CyP-Op-jjJ" secondAttribute="trailing" id="Gl0-76-BNv"/>
+                                                <constraint firstItem="CyP-Op-jjJ" firstAttribute="leading" secondItem="BAR-sA-h48" secondAttribute="leading" id="JE6-Em-bLv"/>
+                                                <constraint firstItem="CyP-Op-jjJ" firstAttribute="top" secondItem="BAR-sA-h48" secondAttribute="top" id="Z5r-hT-gkg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                        <connections>
+                                            <outlet property="orderDateLabel" destination="0qm-4r-hug" id="WDn-IO-NOG"/>
+                                            <outlet property="orderNumberLabel" destination="ktB-XA-SEz" id="vVB-aJ-oTI"/>
+                                            <outlet property="orderTotalLabel" destination="nE8-vS-BD8" id="7dy-9h-HA6"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XSZ-R2-Crd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XSZ-R2-Crd" firstAttribute="trailing" secondItem="efa-pi-2JA" secondAttribute="trailing" constant="51" id="0yu-Ms-J3L"/>
+                            <constraint firstItem="cxN-sZ-H5r" firstAttribute="bottom" secondItem="XSZ-R2-Crd" secondAttribute="bottom" id="DJN-Lt-8wZ"/>
+                            <constraint firstItem="efa-pi-2JA" firstAttribute="leading" secondItem="XSZ-R2-Crd" secondAttribute="leading" constant="50" id="Mwn-Ed-wB0"/>
+                            <constraint firstItem="cxN-sZ-H5r" firstAttribute="trailing" secondItem="XSZ-R2-Crd" secondAttribute="trailing" id="bEV-YU-vwA"/>
+                            <constraint firstItem="cxN-sZ-H5r" firstAttribute="leading" secondItem="XSZ-R2-Crd" secondAttribute="leading" id="gCl-JE-e9t"/>
+                            <constraint firstItem="cxN-sZ-H5r" firstAttribute="top" secondItem="efa-pi-2JA" secondAttribute="bottom" id="uao-ID-Wop"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="cxN-sZ-H5r" id="doM-ZT-UTo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w9u-6R-AZl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1156.4885496183206" y="1843.661971830986"/>
+        </scene>
+        <!--Change Password View Controller-->
+        <scene sceneID="uOd-Vu-nq1">
+            <objects>
+                <viewController id="Ihv-7m-Jf6" customClass="ChangePasswordViewController" customModule="onlinestoreProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0qP-iv-dwq">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="كلمه المرور الحاليه" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uPC-ww-N6g">
+                                <rect key="frame" x="24" y="251" width="345" height="50"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="GRs-aF-PW8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="كلمه المرور الحاليه" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AaI-Vj-i08">
+                                <rect key="frame" x="24" y="351" width="345" height="50"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="yuC-nI-kgQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqv-iD-uJe">
+                                <rect key="frame" x="24" y="657" width="345" height="54"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="R4x-Gq-B6d"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="تحديث كلمه المرور">
+                                    <fontDescription key="titleFontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="updatePasswordTapped:" destination="Ihv-7m-Jf6" eventType="touchUpInside" id="qae-tp-u4w"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تغيير كلمة المرور" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ex-Ub-o09">
+                                <rect key="frame" x="89" y="172" width="214" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="0EA-Db-0ez"/>
+                                    <constraint firstAttribute="width" constant="214" id="Cyp-9k-7jY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="B2d-dQ-LzN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uPC-ww-N6g" firstAttribute="top" secondItem="5ex-Ub-o09" secondAttribute="bottom" constant="24" id="IBs-2w-2fL"/>
+                            <constraint firstItem="B2d-dQ-LzN" firstAttribute="trailing" secondItem="hqv-iD-uJe" secondAttribute="trailing" constant="24" id="Mww-oA-p08"/>
+                            <constraint firstItem="AaI-Vj-i08" firstAttribute="leading" secondItem="B2d-dQ-LzN" secondAttribute="leading" constant="24" id="TQf-1B-bpY"/>
+                            <constraint firstItem="B2d-dQ-LzN" firstAttribute="trailing" secondItem="AaI-Vj-i08" secondAttribute="trailing" constant="24" id="cZK-WE-3Sw"/>
+                            <constraint firstItem="B2d-dQ-LzN" firstAttribute="trailing" secondItem="5ex-Ub-o09" secondAttribute="trailing" constant="90" id="fGa-JQ-k2m"/>
+                            <constraint firstItem="uPC-ww-N6g" firstAttribute="leading" secondItem="B2d-dQ-LzN" secondAttribute="leading" constant="24" id="iMz-Xe-C7I"/>
+                            <constraint firstItem="B2d-dQ-LzN" firstAttribute="trailing" secondItem="uPC-ww-N6g" secondAttribute="trailing" constant="24" id="iQd-dU-m4S"/>
+                            <constraint firstItem="hqv-iD-uJe" firstAttribute="top" secondItem="AaI-Vj-i08" secondAttribute="bottom" constant="256" id="iR4-Oe-w73"/>
+                            <constraint firstItem="AaI-Vj-i08" firstAttribute="top" secondItem="uPC-ww-N6g" secondAttribute="bottom" constant="50" id="mhX-re-qJN"/>
+                            <constraint firstItem="5ex-Ub-o09" firstAttribute="top" secondItem="B2d-dQ-LzN" secondAttribute="top" id="rgZ-yk-kT7"/>
+                            <constraint firstItem="hqv-iD-uJe" firstAttribute="leading" secondItem="B2d-dQ-LzN" secondAttribute="leading" constant="24" id="twv-H5-6Xu"/>
+                            <constraint firstItem="5ex-Ub-o09" firstAttribute="leading" secondItem="B2d-dQ-LzN" secondAttribute="leading" constant="89" id="wzb-F1-3YJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="w6t-Cj-riz"/>
+                    <connections>
+                        <outlet property="currentPasswordTextField" destination="uPC-ww-N6g" id="jq1-XC-6U2"/>
+                        <outlet property="newPasswordTextField" destination="AaI-Vj-i08" id="otp-Rm-sgm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G0d-WW-U0m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="247" y="2803"/>
+        </scene>
+        <!--Account Settings View Controller-->
+        <scene sceneID="QaX-E8-XbO">
+            <objects>
+                <viewController id="kn9-OK-sBg" customClass="AccountSettingsViewController" customModule="onlinestoreProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LxB-23-Sl1">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="إعدادات الحساب" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sm2-hU-ioc">
+                                <rect key="frame" x="51" y="160" width="292" height="54.666666666666657"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="292" id="dle-42-zsF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOx-XI-70k">
+                                <rect key="frame" x="30" y="246.66666666666663" width="333" height="54"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="pencil" catalog="system" title="تغيير اسم المستخدم ">
+                                    <fontDescription key="titleFontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="2OU-tL-Umy" kind="show" id="dFY-67-SOj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3J4-1w-pwj">
+                                <rect key="frame" x="30" y="316.66666666666669" width="333" height="54"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="lock" catalog="system" title="تغيير كلمه المرور">
+                                    <fontDescription key="titleFontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Ihv-7m-Jf6" kind="show" id="RBR-Kr-gye"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ryt-sM-AVt">
+                                <rect key="frame" x="30" y="386.66666666666669" width="333" height="70"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="y9f-2i-yKc"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="trash.fill" catalog="system" title="حذف الحساب نهائيا">
+                                    <fontDescription key="titleFontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="24"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3dc-mc-vpu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ryt-sM-AVt" firstAttribute="leading" secondItem="3dc-mc-vpu" secondAttribute="leading" constant="30" id="5sb-5C-Bgj"/>
+                            <constraint firstItem="sm2-hU-ioc" firstAttribute="top" secondItem="LxB-23-Sl1" secondAttribute="top" constant="160" id="8n7-UE-1cY"/>
+                            <constraint firstItem="3J4-1w-pwj" firstAttribute="leading" secondItem="3dc-mc-vpu" secondAttribute="leading" constant="30" id="95z-94-Fmb"/>
+                            <constraint firstItem="3dc-mc-vpu" firstAttribute="trailing" secondItem="3J4-1w-pwj" secondAttribute="trailing" constant="30" id="Kyf-OK-sCf"/>
+                            <constraint firstItem="3J4-1w-pwj" firstAttribute="top" secondItem="rOx-XI-70k" secondAttribute="bottom" constant="16" id="NOw-cU-l2h"/>
+                            <constraint firstItem="3dc-mc-vpu" firstAttribute="trailing" secondItem="rOx-XI-70k" secondAttribute="trailing" constant="30" id="aRF-yY-TUn"/>
+                            <constraint firstItem="3dc-mc-vpu" firstAttribute="trailing" secondItem="sm2-hU-ioc" secondAttribute="trailing" constant="50" id="fVZ-hv-7V9"/>
+                            <constraint firstItem="ryt-sM-AVt" firstAttribute="top" secondItem="3J4-1w-pwj" secondAttribute="bottom" constant="16" id="jof-bl-OY6"/>
+                            <constraint firstItem="sm2-hU-ioc" firstAttribute="leading" secondItem="3dc-mc-vpu" secondAttribute="leading" constant="51" id="lKX-eQ-IJQ"/>
+                            <constraint firstItem="3dc-mc-vpu" firstAttribute="trailing" secondItem="ryt-sM-AVt" secondAttribute="trailing" constant="30" id="mRy-zn-4NN"/>
+                            <constraint firstItem="rOx-XI-70k" firstAttribute="leading" secondItem="3dc-mc-vpu" secondAttribute="leading" constant="30" id="mcn-mV-6H7"/>
+                            <constraint firstItem="rOx-XI-70k" firstAttribute="top" secondItem="sm2-hU-ioc" secondAttribute="bottom" constant="32" id="nsr-Fe-bQp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="KDQ-uc-g6i"/>
+                    <connections>
+                        <outlet property="deleteAccountButton" destination="ryt-sM-AVt" id="wKo-F8-QFO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RGC-sS-SdX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-150" y="1877"/>
+        </scene>
+        <!--Contact Us View Controller-->
+        <scene sceneID="bFg-Ao-7Oi">
+            <objects>
+                <viewController id="eeQ-Dl-L0S" customClass="ContactUsViewController" customModule="onlinestoreProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jGS-Y0-e7v">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="headphones.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="xob-WQ-eNQ">
+                                <rect key="frame" x="76" y="59" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="AccentColor"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="نحن هنا لمساعدتك!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAs-kG-jjo">
+                                <rect key="frame" x="50" y="187" width="292" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-SemiBold" family="Playpen Sans Arabic" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="هاتف: 0790000000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qfl-mq-zo2">
+                                <rect key="frame" x="57" y="289" width="241" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-SemiBold" family="Playpen Sans Arabic" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="واتساب: 0790000000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T52-st-NlF">
+                                <rect key="frame" x="54" y="392" width="244" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-SemiBold" family="Playpen Sans Arabic" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="phone.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="RTZ-W7-C8w">
+                                <rect key="frame" x="302" y="285" width="40" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="AccentColor"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mail" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="PkK-hz-MZR">
+                                <rect key="frame" x="302" y="337" width="40" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="AccentColor"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="message.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Sbk-h4-f0Q">
+                                <rect key="frame" x="302" y="389" width="40" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="AccentColor"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="إيميل: support@onlinestore.com" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJE-WZ-6xC">
+                                <rect key="frame" x="57" y="346" width="241" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-SemiBold" family="Playpen Sans Arabic" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ExE-jO-NTf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7v5-ql-m1M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1081.679389312977" y="1877.4647887323945"/>
+        </scene>
+        <!--Payment Methods View Controller-->
+        <scene sceneID="hKY-zJ-qBO">
+            <objects>
+                <viewController id="qXr-GX-dkQ" customClass="PaymentMethodsViewController" customModule="onlinestoreProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6fh-4R-R7e">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="طرق الدفع المتاحة" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TB7-cP-PBu">
+                                <rect key="frame" x="50" y="59" width="292" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-SemiBold" family="Playpen Sans Arabic" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Izp-pY-xfd">
+                                <rect key="frame" x="35" y="237" width="317" height="186"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="banknote.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zx3-Vv-Opo">
+                                        <rect key="frame" x="204" y="10.333333333333485" width="113" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" name="AccentColor"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="الدفع عند الاستلام (Cash)" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Mr-CT-UON">
+                                        <rect key="frame" x="59" y="100" width="250" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="PlaypenSansArabic-SemiBold" family="Playpen Sans Arabic" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6aa-Ji-7Uu">
+                                <rect key="frame" x="35" y="462" width="317" height="186"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="creditcard.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GGt-Z9-BiI">
+                                        <rect key="frame" x="204" y="10.333333333333485" width="113" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" name="AccentColor"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="البطاقة الائتمانية - قريباً" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIS-gX-hVp">
+                                        <rect key="frame" x="88" y="100" width="221" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="PlaypenSansArabic-SemiBold" family="Playpen Sans Arabic" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ear-a4-DY5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="46L-Kx-nU3"/>
+                    <connections>
+                        <outlet property="cashCardView" destination="Izp-pY-xfd" id="BTY-IY-rvx"/>
+                        <outlet property="creditCardView" destination="6aa-Ji-7Uu" id="Qma-vM-8DU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o66-6F-CSS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2052.6717557251909" y="1877.4647887323945"/>
+        </scene>
+        <!--Checkout View Controller-->
+        <scene sceneID="0Vz-30-y6c">
+            <objects>
+                <viewController storyboardIdentifier="CheckoutViewController" id="cZI-LL-qgE" customClass="CheckoutViewController" customModule="onlinestoreProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4GJ-Bm-G97">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="تفاصيل التوصيل" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqP-Ly-M83">
+                                <rect key="frame" x="92" y="73" width="209" height="55"/>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="SCO-y5-uYW">
+                                <rect key="frame" x="24" y="263" width="345" height="206"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="رقم الهاتف (مثال: 0790000000)" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CrU-CD-aNe">
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="50"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="المدينة أو المنطقة" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kEg-US-OPZ">
+                                        <rect key="frame" x="0.0" y="77.999999999999986" width="345" height="50"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="الشارع، رقم البناية، الشقة" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hau-rP-aLl">
+                                        <rect key="frame" x="0.0" y="156" width="345" height="50"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="NIQ-jp-nvb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7CP-7U-Woh">
+                                <rect key="frame" x="26" y="673" width="345" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="تاكيد الطلب">
+                                    <fontDescription key="titleFontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="confirmOrderTapped:" destination="cZI-LL-qgE" eventType="touchUpInside" id="Rqg-6V-mML"/>
+                                    <action selector="updatePasswordTapped:" destination="Ihv-7m-Jf6" eventType="touchUpInside" id="hKk-Gc-TJA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Kc8-HC-sKr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SCO-y5-uYW" firstAttribute="top" secondItem="vqP-Ly-M83" secondAttribute="bottom" constant="32" id="GB7-jp-FHm"/>
+                            <constraint firstItem="SCO-y5-uYW" firstAttribute="leading" secondItem="Kc8-HC-sKr" secondAttribute="leading" constant="24" id="Jls-C8-cmI"/>
+                            <constraint firstItem="Kc8-HC-sKr" firstAttribute="trailing" secondItem="SCO-y5-uYW" secondAttribute="trailing" constant="24" id="yoq-Rt-7Do"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityTextField" destination="kEg-US-OPZ" id="jxr-Ft-uEp"/>
+                        <outlet property="phoneTextField" destination="CrU-CD-aNe" id="pJA-RM-BBj"/>
+                        <outlet property="streetTextField" destination="Hau-rP-aLl" id="UGb-iQ-WbZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dzW-aW-Imj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3319" y="1863"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="NKk-0V-2Wc">
+            <objects>
+                <viewController id="cz3-de-anI" customClass="ProfileViewController" customModule="onlinestoreProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qqe-M2-ZHH">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اسم المستخدم" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZO-0y-UYc">
+                                <rect key="frame" x="49" y="98" width="292" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="FSy-J7-Ifx"/>
+                                    <constraint firstAttribute="width" constant="292" id="sFk-nQ-0ag"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-SemiBold" family="Playpen Sans Arabic" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الايميل" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWf-Oa-LoY">
+                                <rect key="frame" x="80" y="154" width="233" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="DBw-23-LJK"/>
+                                    <constraint firstAttribute="width" constant="233" id="xEq-hR-1cd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="nZF-kQ-hai">
+                                <rect key="frame" x="24" y="242" width="345" height="364"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDM-hf-kfc">
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="cube.box.fill" catalog="system" title="طلباتي السابقه">
+                                            <fontDescription key="titleFontDescription" name="PlaypenSansArabic-Bold" family="Playpen Sans Arabic" pointSize="17"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="addToCartTapped:" destination="q17-ew-fvr" eventType="touchUpInside" id="w2Y-s2-JKI"/>
+                                            <segue destination="gHg-HY-OQe" kind="presentation" id="dj4-DR-Rdk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCI-UN-fpI">
+                                        <rect key="frame" x="0.0" y="76" width="345" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="gearshape.fill" catalog="system" title="اعدادات الحساب ">
+                                            <fontDescription key="titleFontDescription" name="PlaypenSansArabic-Bold" family="Playpen Sans Arabic" pointSize="17"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="addToCartTapped:" destination="q17-ew-fvr" eventType="touchUpInside" id="ADp-6L-1FP"/>
+                                            <segue destination="kn9-OK-sBg" kind="show" id="qs3-RQ-hPe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="md6-oz-sHf">
+                                        <rect key="frame" x="0.0" y="152" width="345" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="phone.fill" catalog="system" title="تواصل معنا">
+                                            <fontDescription key="titleFontDescription" name="PlaypenSansArabic-Bold" family="Playpen Sans Arabic" pointSize="17"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="addToCartTapped:" destination="q17-ew-fvr" eventType="touchUpInside" id="aVm-UX-Sy1"/>
+                                            <segue destination="eeQ-Dl-L0S" kind="presentation" id="mRZ-eg-Af9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yy-hP-xID">
+                                        <rect key="frame" x="0.0" y="228" width="345" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="creditcard.fill" catalog="system" title="طرق الدفع">
+                                            <fontDescription key="titleFontDescription" name="PlaypenSansArabic-Bold" family="Playpen Sans Arabic" pointSize="17"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="addToCartTapped:" destination="q17-ew-fvr" eventType="touchUpInside" id="3ug-m8-snz"/>
+                                            <segue destination="qXr-GX-dkQ" kind="show" id="4dt-pj-ixS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9L-gH-wWR">
+                                        <rect key="frame" x="0.0" y="304" width="345" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="kgX-dX-aeK"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="rectangle.portrait.and.arrow.right" catalog="system" title="تسجيل الخروج     ">
+                                            <fontDescription key="titleFontDescription" name="PlaypenSansArabic-Bold" family="Playpen Sans Arabic" pointSize="17"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="addToCartTapped:" destination="q17-ew-fvr" eventType="touchUpInside" id="fHL-TK-3Cv"/>
+                                            <action selector="logoutTapped:" destination="cz3-de-anI" eventType="touchUpInside" id="dEC-fr-QpV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="364" id="ME4-02-Qfd"/>
+                                    <constraint firstAttribute="width" constant="167" id="gBd-xV-Y1j"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Zlt-z7-YtD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hZO-0y-UYc" firstAttribute="top" secondItem="Qqe-M2-ZHH" secondAttribute="top" constant="98" id="1vG-FZ-HJt"/>
+                            <constraint firstItem="nZF-kQ-hai" firstAttribute="top" secondItem="LWf-Oa-LoY" secondAttribute="bottom" constant="73" id="HGs-j3-0Cb"/>
+                            <constraint firstItem="hZO-0y-UYc" firstAttribute="leading" secondItem="Zlt-z7-YtD" secondAttribute="leading" constant="49" id="J1g-9j-xis"/>
+                            <constraint firstItem="LWf-Oa-LoY" firstAttribute="leading" secondItem="Zlt-z7-YtD" secondAttribute="leading" constant="80" id="Kzi-my-Tmq"/>
+                            <constraint firstItem="nZF-kQ-hai" firstAttribute="top" secondItem="LWf-Oa-LoY" secondAttribute="bottom" constant="50" id="MQO-l6-aKX"/>
+                            <constraint firstItem="nZF-kQ-hai" firstAttribute="leading" secondItem="Zlt-z7-YtD" secondAttribute="leading" constant="24" id="O06-Q8-uV6"/>
+                            <constraint firstItem="LWf-Oa-LoY" firstAttribute="top" secondItem="hZO-0y-UYc" secondAttribute="bottom" constant="8" symbolic="YES" id="RrI-rr-CSj"/>
+                            <constraint firstItem="Zlt-z7-YtD" firstAttribute="trailing" secondItem="hZO-0y-UYc" secondAttribute="trailing" constant="52" id="aK3-gJ-TkW"/>
+                            <constraint firstItem="Zlt-z7-YtD" firstAttribute="trailing" secondItem="nZF-kQ-hai" secondAttribute="trailing" constant="24" id="vuX-MF-sMl"/>
+                            <constraint firstItem="Zlt-z7-YtD" firstAttribute="trailing" secondItem="LWf-Oa-LoY" secondAttribute="trailing" constant="80" id="zNY-21-TUZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qb1-pC-8cY"/>
+                    <connections>
+                        <outlet property="EmailLabel" destination="LWf-Oa-LoY" id="j1T-Ft-bQO"/>
+                        <outlet property="NameLabel" destination="hZO-0y-UYc" id="yyi-E8-MGc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mID-ub-cKY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1173.2824427480916" y="1036.6197183098593"/>
+        </scene>
+        <!--البحث-->
+        <scene sceneID="ho0-nW-B34">
+            <objects>
+                <viewController id="Xxi-YJ-yeO" customClass="SearchViewController" customModule="onlinestoreProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TEr-Pu-Nmg">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="اكتشف أحدث المنتجات " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0pa-mD-FYa">
+                                <rect key="frame" x="130" y="69" width="258" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-SemiBold" family="Playpen Sans Arabic" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lf4-Oa-9qC">
+                                <rect key="frame" x="0.0" y="125" width="393" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Xxi-YJ-yeO" id="Tb0-se-iBe"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="TXN-vp-bcd">
+                                <rect key="frame" x="0.0" y="169" width="393" height="683"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SearchProductCell" rowHeight="100" id="A3Y-BO-HbG" customClass="SearchProductCell" customModule="onlinestoreProject" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A3Y-BO-HbG" id="UdD-gV-CAO">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U4I-eq-N7g">
+                                                    <rect key="frame" x="280" y="9" width="100" height="83"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="السعر " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3p-oE-aas">
+                                                    <rect key="frame" x="156" y="58" width="116" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="PlaypenSansArabic-Bold" family="Playpen Sans Arabic" pointSize="18"/>
+                                                    <color key="textColor" name="AccentColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="اسم المنتج" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3R-d1-N8Q">
+                                                    <rect key="frame" x="43" y="15" width="233" height="38"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="23"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="productImageView" destination="U4I-eq-N7g" id="dhI-x8-d0h"/>
+                                            <outlet property="productNameLabel" destination="a3R-d1-N8Q" id="Ix2-hP-xTE"/>
+                                            <outlet property="productPriceLabel" destination="n3p-oE-aas" id="QLt-Ga-dQ0"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zYr-iG-Ca0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="البحث" image="magnifyingglass" catalog="system" id="YeI-pX-UMc"/>
+                    <connections>
+                        <outlet property="searchBar" destination="Lf4-Oa-9qC" id="T0D-8i-FeN"/>
+                        <outlet property="tableView" destination="TXN-vp-bcd" id="Fih-ze-STw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ojh-35-ehj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2156.4885496183206" y="1036.6197183098593"/>
+        </scene>
+        <!--Product Details View Controller-->
+        <scene sceneID="0Hz-5f-tNW">
+            <objects>
+                <viewController storyboardIdentifier="ProductDetailsViewController" id="q17-ew-fvr" customClass="ProductDetailsViewController" customModule="onlinestoreProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mbY-GX-jYj">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h3h-kS-yBr">
+                                <rect key="frame" x="34" y="57" width="325" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="dBw-Lg-HxJ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="اسم المنتج" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJy-YD-0zz">
+                                <rect key="frame" x="43" y="434" width="316" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="تفاصيل المنتج" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z5J-au-Y8Y">
+                                <rect key="frame" x="43" y="549" width="316" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="السعر " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvp-h3-Adx">
+                                <rect key="frame" x="80" y="504" width="176" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-Bold" family="Playpen Sans Arabic" pointSize="30"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="u8g-an-CA6">
+                                <rect key="frame" x="43" y="606" width="316" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8kU-5o-VkK">
+                                <rect key="frame" x="43" y="745" width="316" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="cart.fill" catalog="system" title="اضافه الى السلة ">
+                                    <fontDescription key="titleFontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addToCartTapped:" destination="q17-ew-fvr" eventType="touchUpInside" id="EVH-1q-vpY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="السعر  :" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DB4-TB-dyw">
+                                <rect key="frame" x="264" y="494" width="95" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-Bold" family="Playpen Sans Arabic" pointSize="30"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dhH-S3-7Dx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="h3h-kS-yBr" firstAttribute="leading" secondItem="dhH-S3-7Dx" secondAttribute="leading" constant="34" id="1ZE-Sj-ahI"/>
+                            <constraint firstItem="dhH-S3-7Dx" firstAttribute="trailing" secondItem="h3h-kS-yBr" secondAttribute="trailing" constant="34" id="KQe-rl-AUT"/>
+                            <constraint firstItem="h3h-kS-yBr" firstAttribute="top" secondItem="mbY-GX-jYj" secondAttribute="top" constant="57" id="vVR-Af-J03"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addToCartButton" destination="8kU-5o-VkK" id="nvE-La-TDs"/>
+                        <outlet property="productDescriptionTextView" destination="u8g-an-CA6" id="OGW-RD-HWb"/>
+                        <outlet property="productImageView" destination="h3h-kS-yBr" id="JaE-xC-Pws"/>
+                        <outlet property="productNameLabel" destination="gJy-YD-0zz" id="M8N-Ts-30f"/>
+                        <outlet property="productPriceLabel" destination="cvp-h3-Adx" id="8fd-Fc-bFK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ehh-zt-TNa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3428" y="225"/>
+        </scene>
+        <!--السلة-->
+        <scene sceneID="ZGv-KR-G8x">
+            <objects>
+                <viewController id="ZIB-bL-fT5" customClass="CartViewController" customModule="onlinestoreProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nfG-67-1Ii">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6jt-wl-Uhq">
+                                <rect key="frame" x="0.0" y="704" width="393" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="الاجمالي :" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bhg-7R-2mQ">
+                                        <rect key="frame" x="262" y="16" width="123" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="400 JD" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1x-eE-WB8">
+                                        <rect key="frame" x="139" y="15" width="123" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="25"/>
+                                        <color key="textColor" name="AccentColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRo-Ja-l8P">
+                                        <rect key="frame" x="1" y="17" width="133" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="اتمام الطلب">
+                                            <fontDescription key="titleFontDescription" name="PlaypenSansArabic-ExtraBold" family="Playpen Sans Arabic" pointSize="15"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="checkoutTapped:" destination="ZIB-bL-fT5" eventType="touchUpInside" id="gJz-m7-Qv0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="سلة المشتريات " textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FdJ-2I-n6Q">
+                                <rect key="frame" x="165" y="55" width="217" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="7tR-Jg-We5">
+                                <rect key="frame" x="0.0" y="118" width="393" height="586"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CartItemCell" rowHeight="111" id="VRV-RX-gWA" customClass="CartItemCell" customModule="onlinestoreProject" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="111"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VRV-RX-gWA" id="QR0-7N-gHO">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="111"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Dw-pJ-vHc">
+                                                    <rect key="frame" x="283" y="15" width="90" height="83"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="السعر " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30V-xm-W4x">
+                                                    <rect key="frame" x="159" y="61" width="116" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="PlaypenSansArabic-Bold" family="Playpen Sans Arabic" pointSize="18"/>
+                                                    <color key="textColor" name="AccentColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="اسم المنتج" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1iN-qT-uW8">
+                                                    <rect key="frame" x="118" y="15" width="157" height="38"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="23"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2v6-PQ-fL4">
+                                                    <rect key="frame" x="14" y="29" width="63" height="53"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="tintColor" name="AccentColor"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="trash.fill" catalog="system"/>
+                                                    <connections>
+                                                        <action selector="deleteTapped:" destination="VRV-RX-gWA" eventType="touchUpInside" id="5DG-rz-IxP"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="deleteButton" destination="2v6-PQ-fL4" id="tyP-UN-U5P"/>
+                                            <outlet property="productImageView" destination="5Dw-pJ-vHc" id="ctb-Dc-MPL"/>
+                                            <outlet property="productNameLabel" destination="1iN-qT-uW8" id="2jg-d4-2QC"/>
+                                            <outlet property="productPriceLabel" destination="30V-xm-W4x" id="kVb-Ex-1HP"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6vH-0O-T2T"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="السلة" image="cart" catalog="system" id="bwh-7h-W7p"/>
+                    <connections>
+                        <outlet property="checkoutButton" destination="uRo-Ja-l8P" id="soZ-X7-3bo"/>
+                        <outlet property="tableView" destination="7tR-Jg-We5" id="ZkV-97-I4U"/>
+                        <outlet property="totalPriceLabel" destination="a1x-eE-WB8" id="roS-8w-5AY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kCl-Eo-w7I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3324.4274809160306" y="1134.5070422535211"/>
+        </scene>
+        <!--الرئيسية-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="onlinestoreProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اكتشف أحدث المنتجات" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kzg-Ec-EUF">
+                                <rect key="frame" x="156" y="117.99999999999999" width="237" height="41.333333333333329"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41.329999999999998" id="3e5-g7-mU7"/>
+                                    <constraint firstAttribute="width" constant="237" id="Vx2-7r-Kz2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-Medium" family="Playpen Sans Arabic" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ibc-Hy-eW5">
+                                <rect key="frame" x="0.0" y="187" width="393" height="665"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="393" id="WlT-wS-5yb"/>
+                                    <constraint firstAttribute="height" constant="665" id="sVW-yF-MCM"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Qfl-we-bdg">
+                                    <size key="itemSize" width="138" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="IKS-nN-Cws" customClass="ProductCollectionViewCell" customModule="onlinestoreProject" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="220"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7gR-Yc-Izr">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="220"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="25E-co-oxU">
+                                                    <rect key="frame" x="8" y="8" width="134" height="120"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="اسم المنتج " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GrN-We-NaL">
+                                                    <rect key="frame" x="8" y="136" width="126" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="PlaypenSansArabic-ExtraBold" family="Playpen Sans Arabic" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="150 JD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3EX-lD-jz3">
+                                                    <rect key="frame" x="8" y="196" width="74" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="PlaypenSansArabic-ExtraBold" family="Playpen Sans Arabic" pointSize="14"/>
+                                                    <color key="textColor" name="AccentColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7N-k7-0ih">
+                                                    <rect key="frame" x="98" y="187" width="52" height="29"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="tintColor" name="AccentColor"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="plus.capsule.fill" catalog="system"/>
+                                                    <connections>
+                                                        <action selector="addToCartTapped:" destination="IKS-nN-Cws" eventType="touchUpInside" id="50V-y1-OpX"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="150" height="220"/>
+                                        <connections>
+                                            <outlet property="addToCartButton" destination="b7N-k7-0ih" id="Kfu-uz-d3y"/>
+                                            <outlet property="productImageView" destination="25E-co-oxU" id="EIQ-fc-FeA"/>
+                                            <outlet property="productNameLabel" destination="GrN-We-NaL" id="EXO-Dp-UvP"/>
+                                            <outlet property="productPriceLabel" destination="3EX-lD-jz3" id="x9U-6d-yup"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="5Ih-1N-8pf">
+                                <rect key="frame" x="275" y="82" width="112" height="31.666666666666671"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" أحمد!" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hc8-F0-Fh8">
+                                        <rect key="frame" x="0.0" y="0.0" width="52" height="31.666666666666668"/>
+                                        <fontDescription key="fontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مرحباً" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVW-mM-0xR">
+                                        <rect key="frame" x="70" y="0.0" width="42" height="31.666666666666668"/>
+                                        <fontDescription key="fontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="112" id="7zj-WZ-n5T"/>
+                                    <constraint firstAttribute="height" constant="31.670000000000002" id="qwO-mA-hQE"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Ibc-Hy-eW5" secondAttribute="bottom" id="17T-jJ-lA9"/>
+                            <constraint firstItem="Ibc-Hy-eW5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="254-oQ-CiO"/>
+                            <constraint firstItem="5Ih-1N-8pf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="82" id="77g-BA-oP7"/>
+                            <constraint firstItem="Ibc-Hy-eW5" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9zF-2W-v8b"/>
+                            <constraint firstItem="kzg-Ec-EUF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="CLh-jQ-hsc"/>
+                            <constraint firstItem="Ibc-Hy-eW5" firstAttribute="top" secondItem="kzg-Ec-EUF" secondAttribute="bottom" constant="27.670000000000002" id="IfE-xR-mfD"/>
+                            <constraint firstItem="5Ih-1N-8pf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="275" id="JBg-DU-Fpe"/>
+                            <constraint firstItem="kzg-Ec-EUF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="156" id="N3l-SU-8JU"/>
+                            <constraint firstItem="kzg-Ec-EUF" firstAttribute="top" secondItem="5Ih-1N-8pf" secondAttribute="bottom" constant="4.3300000000000001" id="YBJ-Pe-Eq5"/>
+                            <constraint firstItem="Ibc-Hy-eW5" firstAttribute="top" secondItem="kzg-Ec-EUF" secondAttribute="bottom" constant="27.670000000000002" id="hG4-Ru-q9h"/>
+                            <constraint firstAttribute="trailing" secondItem="5Ih-1N-8pf" secondAttribute="trailing" constant="6" id="wK8-7x-KGC"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="الرئيسية" image="house" catalog="system" id="zLG-ya-C3t">
+                        <color key="badgeColor" name="AccentColor"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="productsCollectionView" destination="Ibc-Hy-eW5" id="TMF-Au-Bdp"/>
+                        <outlet property="usernameLabel" destination="hc8-F0-Fh8" id="V8B-Hs-S0x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2095.419847328244" y="209.85915492957747"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1wK-2j-ggJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TDS-T1-5mI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LrO-Xb-4mB">
+                        <rect key="frame" x="0.0" y="118" width="393" height="54"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Zzb-i8-pya" kind="relationship" relationship="rootViewController" id="iiE-M5-uXe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kln-3T-4MI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1883" y="225"/>
+        </scene>
+        <!--Main Tab Bar Controller-->
+        <scene sceneID="YD2-uX-hqh">
+            <objects>
+                <tabBarController storyboardIdentifier="MainTabBarController" automaticallyAdjustsScrollViewInsets="NO" id="tdR-r3-RV2" customClass="MainTabBarController" customModule="onlinestoreProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AUA-Zf-jW5">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="rKv-bU-Whr" kind="relationship" relationship="viewControllers" id="OyY-Vp-uKb"/>
+                        <segue destination="ZIB-bL-fT5" kind="relationship" relationship="viewControllers" id="HXe-JZ-9NE"/>
+                        <segue destination="Xxi-YJ-yeO" kind="relationship" relationship="viewControllers" id="ykQ-Em-3xg"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="uie-Zc-Ho9"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X0k-NF-mDH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1168.7022900763359" y="209.85915492957747"/>
+        </scene>
+        <!--حسابي-->
+        <scene sceneID="DRb-aY-L9L">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rKv-bU-Whr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="حسابي" image="person.fill" catalog="system" id="bnD-tC-O9B"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hsg-po-W9O">
+                        <rect key="frame" x="0.0" y="118" width="393" height="54"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cz3-de-anI" kind="relationship" relationship="rootViewController" id="Uc9-DO-YcO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uci-4B-BUM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="246.56488549618319" y="1036.6197183098593"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="banknote.fill" catalog="system" width="128" height="78"/>
+        <image name="cart" catalog="system" width="128" height="102"/>
+        <image name="cart.fill" catalog="system" width="128" height="102"/>
+        <image name="creditcard.fill" catalog="system" width="128" height="88"/>
+        <image name="cube.box.fill" catalog="system" width="128" height="123"/>
+        <image name="gearshape.fill" catalog="system" width="128" height="123"/>
+        <image name="headphones.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <image name="lock" catalog="system" width="111" height="128"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="mail" catalog="system" width="128" height="93"/>
+        <image name="message.fill" catalog="system" width="128" height="104"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="phone.fill" catalog="system" width="128" height="114"/>
+        <image name="plus.capsule.fill" catalog="system" width="128" height="96"/>
+        <image name="rectangle.portrait.and.arrow.right" catalog="system" width="128" height="109"/>
+        <image name="trash.fill" catalog="system" width="117" height="128"/>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.79199999570846558" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
