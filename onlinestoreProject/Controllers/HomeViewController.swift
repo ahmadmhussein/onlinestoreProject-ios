@@ -27,7 +27,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
             if let document = document, document.exists {
                 let name = document.data()?["name"] as? String ?? "مستخدم"
                 DispatchQueue.main.async {
-                    self?.usernameLabel.text = "مرحباً \(name)!"
+                    self?.usernameLabel.text = "\(name)!"
                 }
             }
         }

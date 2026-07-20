@@ -80,7 +80,7 @@
                                 <rect key="frame" x="42" y="407" width="315" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyX-W7-Lrk">
                                 <rect key="frame" x="56" y="521" width="286" height="39"/>
@@ -234,7 +234,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تغيير اسم المستخدم" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6Z-io-4Fa">
-                                <rect key="frame" x="50" y="196" width="266" height="55"/>
+                                <rect key="frame" x="50" y="196" width="293" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="266" id="QB4-s3-5zF"/>
                                     <constraint firstAttribute="height" constant="55" id="whN-xG-p4d"/>
@@ -244,7 +244,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ادخل الاسم الجديد هنا" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yja-L6-LxZ">
-                                <rect key="frame" x="24" y="275" width="318" height="50"/>
+                                <rect key="frame" x="24" y="275" width="345" height="50"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="IZK-aY-KgN"/>
@@ -295,12 +295,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="طلباتي السابقة" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efa-pi-2JA">
-                                <rect key="frame" x="50" y="35" width="292" height="48"/>
-                                <fontDescription key="fontDescription" name="PlaypenSansArabic-SemiBold" family="Playpen Sans Arabic" pointSize="29"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="cxN-sZ-H5r">
                                 <rect key="frame" x="0.0" y="83" width="393" height="710"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -319,38 +313,57 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CyP-Op-jjJ">
                                                     <rect key="frame" x="0.0" y="0.0" width="393" height="147"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="طلب #12345" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktB-XA-SEz">
-                                                            <rect key="frame" x="90" y="8" width="212" height="45"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" name="PlaypenSansArabic-SemiBold" family="Playpen Sans Arabic" pointSize="25"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="الإجمالي: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tw9-f3-Hxr">
-                                                            <rect key="frame" x="278" y="94" width="107" height="45"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" name="PlaypenSansArabic-SemiBold" family="Playpen Sans Arabic" pointSize="25"/>
-                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" 150 JD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nE8-vS-BD8">
-                                                            <rect key="frame" x="147" y="94" width="132" height="45"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" name="PlaypenSansArabic-SemiBold" family="Playpen Sans Arabic" pointSize="25"/>
-                                                            <color key="textColor" name="AccentColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="تاريخ الطلب" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qm-4r-hug">
-                                                            <rect key="frame" x="136" y="54" width="120" height="32"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" name="PlaypenSansArabic-SemiBold" family="Playpen Sans Arabic" pointSize="15"/>
-                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L15-n8-hsc">
+                                                            <rect key="frame" x="8" y="8" width="377" height="131"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="طلب #12345" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IyH-wN-FW5">
+                                                                    <rect key="frame" x="82" y="8" width="212" height="41.333333333333336"/>
+                                                                    <fontDescription key="fontDescription" name="PlaypenSansArabic-SemiBold" family="Playpen Sans Arabic" pointSize="25"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تاريخ الطلب" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyD-Uc-pLy">
+                                                                    <rect key="frame" x="128" y="49" width="120" height="25"/>
+                                                                    <fontDescription key="fontDescription" name="PlaypenSansArabic-SemiBold" family="Playpen Sans Arabic" pointSize="15"/>
+                                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text=" 150 JD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IxU-Yf-z2t">
+                                                                    <rect key="frame" x="65" y="84.666666666666671" width="132" height="41.333333333333329"/>
+                                                                    <fontDescription key="fontDescription" name="PlaypenSansArabic-SemiBold" family="Playpen Sans Arabic" pointSize="25"/>
+                                                                    <color key="textColor" name="AccentColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="الإجمالي: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PvX-U7-uBK">
+                                                                    <rect key="frame" x="215" y="81" width="91.666666666666629" height="41.333333333333343"/>
+                                                                    <fontDescription key="fontDescription" name="PlaypenSansArabic-SemiBold" family="Playpen Sans Arabic" pointSize="25"/>
+                                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                            <constraints>
+                                                                <constraint firstItem="IyH-wN-FW5" firstAttribute="leading" secondItem="L15-n8-hsc" secondAttribute="leading" constant="82" id="3Xc-wV-Vng"/>
+                                                                <constraint firstAttribute="trailing" secondItem="IyH-wN-FW5" secondAttribute="trailing" constant="83" id="7Uk-3H-7pM"/>
+                                                                <constraint firstAttribute="trailing" secondItem="vyD-Uc-pLy" secondAttribute="trailing" constant="129" id="8OX-KA-2yV"/>
+                                                                <constraint firstAttribute="bottom" secondItem="PvX-U7-uBK" secondAttribute="bottom" constant="8.6699999999999999" id="CYY-Qv-heH"/>
+                                                                <constraint firstItem="PvX-U7-uBK" firstAttribute="leading" secondItem="IxU-Yf-z2t" secondAttribute="trailing" constant="23.329999999999998" id="JY1-4w-n9H"/>
+                                                                <constraint firstAttribute="bottom" secondItem="IxU-Yf-z2t" secondAttribute="bottom" constant="5" id="LPE-ln-1PJ"/>
+                                                                <constraint firstAttribute="trailing" secondItem="PvX-U7-uBK" secondAttribute="trailing" constant="65" id="TQS-hC-cnT"/>
+                                                                <constraint firstItem="IxU-Yf-z2t" firstAttribute="leading" secondItem="L15-n8-hsc" secondAttribute="leading" constant="65" id="mje-9s-n9v"/>
+                                                                <constraint firstItem="vyD-Uc-pLy" firstAttribute="leading" secondItem="L15-n8-hsc" secondAttribute="leading" constant="128" id="rhZ-uM-INC"/>
+                                                                <constraint firstItem="vyD-Uc-pLy" firstAttribute="top" secondItem="L15-n8-hsc" secondAttribute="top" constant="49" id="t37-h7-aZe"/>
+                                                                <constraint firstItem="IyH-wN-FW5" firstAttribute="top" secondItem="L15-n8-hsc" secondAttribute="top" constant="8" id="wd4-q7-1rd"/>
+                                                            </constraints>
+                                                        </view>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
+                                                        <constraint firstItem="L15-n8-hsc" firstAttribute="leading" secondItem="CyP-Op-jjJ" secondAttribute="leading" constant="8" id="2hu-V0-i2l"/>
+                                                        <constraint firstItem="L15-n8-hsc" firstAttribute="top" secondItem="CyP-Op-jjJ" secondAttribute="top" constant="8" id="IHU-IH-w74"/>
                                                         <constraint firstAttribute="width" constant="393" id="any-l2-9mq"/>
+                                                        <constraint firstAttribute="bottom" secondItem="L15-n8-hsc" secondAttribute="bottom" constant="8" id="dsR-fO-vVH"/>
+                                                        <constraint firstAttribute="trailing" secondItem="L15-n8-hsc" secondAttribute="trailing" constant="8" id="eq2-vV-S5f"/>
                                                         <constraint firstAttribute="height" constant="147" id="nTj-YI-Joh"/>
                                                     </constraints>
                                                 </view>
@@ -362,15 +375,22 @@
                                                 <constraint firstItem="CyP-Op-jjJ" firstAttribute="top" secondItem="BAR-sA-h48" secondAttribute="top" id="Z5r-hT-gkg"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <outlet property="orderDateLabel" destination="0qm-4r-hug" id="WDn-IO-NOG"/>
-                                            <outlet property="orderNumberLabel" destination="ktB-XA-SEz" id="vVB-aJ-oTI"/>
-                                            <outlet property="orderTotalLabel" destination="nE8-vS-BD8" id="7dy-9h-HA6"/>
+                                            <outlet property="cardd" destination="L15-n8-hsc" id="8Ky-hz-Efh"/>
+                                            <outlet property="orderDateLabel" destination="vyD-Uc-pLy" id="owD-yY-vL8"/>
+                                            <outlet property="orderNumberLabel" destination="IyH-wN-FW5" id="Wod-AY-05b"/>
+                                            <outlet property="orderTotalLabel" destination="IxU-Yf-z2t" id="pHz-o5-mrT"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="طلباتي السابقة" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efa-pi-2JA">
+                                <rect key="frame" x="50" y="59" width="292" height="48"/>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-SemiBold" family="Playpen Sans Arabic" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XSZ-R2-Crd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -378,9 +398,9 @@
                             <constraint firstItem="XSZ-R2-Crd" firstAttribute="trailing" secondItem="efa-pi-2JA" secondAttribute="trailing" constant="51" id="0yu-Ms-J3L"/>
                             <constraint firstItem="cxN-sZ-H5r" firstAttribute="bottom" secondItem="XSZ-R2-Crd" secondAttribute="bottom" id="DJN-Lt-8wZ"/>
                             <constraint firstItem="efa-pi-2JA" firstAttribute="leading" secondItem="XSZ-R2-Crd" secondAttribute="leading" constant="50" id="Mwn-Ed-wB0"/>
+                            <constraint firstItem="efa-pi-2JA" firstAttribute="top" secondItem="XSZ-R2-Crd" secondAttribute="top" id="P7m-P1-ebP"/>
                             <constraint firstItem="cxN-sZ-H5r" firstAttribute="trailing" secondItem="XSZ-R2-Crd" secondAttribute="trailing" id="bEV-YU-vwA"/>
                             <constraint firstItem="cxN-sZ-H5r" firstAttribute="leading" secondItem="XSZ-R2-Crd" secondAttribute="leading" id="gCl-JE-e9t"/>
-                            <constraint firstItem="cxN-sZ-H5r" firstAttribute="top" secondItem="efa-pi-2JA" secondAttribute="bottom" id="uao-ID-Wop"/>
                         </constraints>
                     </view>
                     <connections>
@@ -523,6 +543,34 @@
                                     <fontDescription key="titleFontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="24"/>
                                 </buttonConfiguration>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="طلب #12345" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ke7-o4-SeH">
+                                <rect key="frame" x="30" y="511" width="212" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-SemiBold" family="Playpen Sans Arabic" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="الإجمالي: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rf7-or-9An">
+                                <rect key="frame" x="218" y="597" width="107" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-SemiBold" family="Playpen Sans Arabic" pointSize="25"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" 150 JD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rrr-17-jIP">
+                                <rect key="frame" x="87" y="597" width="132" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-SemiBold" family="Playpen Sans Arabic" pointSize="25"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="تاريخ الطلب" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFz-HD-nv9">
+                                <rect key="frame" x="76" y="557" width="120" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-SemiBold" family="Playpen Sans Arabic" pointSize="15"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3dc-mc-vpu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -690,14 +738,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="تفاصيل التوصيل" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqP-Ly-M83">
-                                <rect key="frame" x="92" y="73" width="209" height="55"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تفاصيل التوصيل" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqP-Ly-M83">
+                                <rect key="frame" x="92" y="73" width="209" height="54.666666666666657"/>
                                 <fontDescription key="fontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="33"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="SCO-y5-uYW">
-                                <rect key="frame" x="24" y="263" width="345" height="206"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="SCO-y5-uYW">
+                                <rect key="frame" x="24" y="159.66666666666663" width="345" height="206"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="رقم الهاتف (مثال: 0790000000)" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CrU-CD-aNe">
                                         <rect key="frame" x="0.0" y="0.0" width="345" height="50"/>
@@ -706,13 +754,13 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="المدينة أو المنطقة" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kEg-US-OPZ">
-                                        <rect key="frame" x="0.0" y="77.999999999999986" width="345" height="50"/>
+                                        <rect key="frame" x="0.0" y="78" width="345" height="50"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="الشارع، رقم البناية، الشقة" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hau-rP-aLl">
-                                        <rect key="frame" x="0.0" y="156" width="345" height="50"/>
+                                        <rect key="frame" x="0.0" y="156.00000000000003" width="345" height="50"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="NIQ-jp-nvb"/>
@@ -722,10 +770,12 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7CP-7U-Woh">
-                                <rect key="frame" x="26" y="673" width="345" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7CP-7U-Woh">
+                                <rect key="frame" x="24" y="673" width="345" height="54"/>
                                 <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="Ddw-Th-9ie"/>
+                                </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="تاكيد الطلب">
@@ -740,8 +790,14 @@
                         <viewLayoutGuide key="safeArea" id="Kc8-HC-sKr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="vqP-Ly-M83" firstAttribute="top" secondItem="4GJ-Bm-G97" secondAttribute="top" constant="73" id="2Tz-Xg-mLR"/>
+                            <constraint firstItem="vqP-Ly-M83" firstAttribute="leading" secondItem="Kc8-HC-sKr" secondAttribute="leading" constant="92" id="8Wd-50-csB"/>
                             <constraint firstItem="SCO-y5-uYW" firstAttribute="top" secondItem="vqP-Ly-M83" secondAttribute="bottom" constant="32" id="GB7-jp-FHm"/>
+                            <constraint firstItem="7CP-7U-Woh" firstAttribute="leading" secondItem="Kc8-HC-sKr" secondAttribute="leading" constant="24" id="GVW-YF-IQG"/>
                             <constraint firstItem="SCO-y5-uYW" firstAttribute="leading" secondItem="Kc8-HC-sKr" secondAttribute="leading" constant="24" id="Jls-C8-cmI"/>
+                            <constraint firstItem="Kc8-HC-sKr" firstAttribute="trailing" secondItem="vqP-Ly-M83" secondAttribute="trailing" constant="92" id="KCl-bz-tHN"/>
+                            <constraint firstItem="Kc8-HC-sKr" firstAttribute="bottom" secondItem="7CP-7U-Woh" secondAttribute="bottom" constant="57" id="ky8-bJ-itr"/>
+                            <constraint firstItem="Kc8-HC-sKr" firstAttribute="trailing" secondItem="7CP-7U-Woh" secondAttribute="trailing" constant="24" id="tnV-o0-wFY"/>
                             <constraint firstItem="Kc8-HC-sKr" firstAttribute="trailing" secondItem="SCO-y5-uYW" secondAttribute="trailing" constant="24" id="yoq-Rt-7Do"/>
                         </constraints>
                     </view>
@@ -1242,42 +1298,33 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="5Ih-1N-8pf">
-                                <rect key="frame" x="275" y="82" width="112" height="31.666666666666671"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" أحمد!" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hc8-F0-Fh8">
-                                        <rect key="frame" x="0.0" y="0.0" width="52" height="31.666666666666668"/>
-                                        <fontDescription key="fontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="19"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مرحباً" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVW-mM-0xR">
-                                        <rect key="frame" x="70" y="0.0" width="42" height="31.666666666666668"/>
-                                        <fontDescription key="fontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="19"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="112" id="7zj-WZ-n5T"/>
-                                    <constraint firstAttribute="height" constant="31.670000000000002" id="qwO-mA-hQE"/>
-                                </constraints>
-                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" أحمد!" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hc8-F0-Fh8">
+                                <rect key="frame" x="270" y="82" width="52" height="32"/>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مرحباً" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVW-mM-0xR">
+                                <rect key="frame" x="345" y="82" width="42" height="31.666666666666671"/>
+                                <fontDescription key="fontDescription" name="PlaypenSansArabic-Regular" family="Playpen Sans Arabic" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="Ibc-Hy-eW5" secondAttribute="bottom" id="17T-jJ-lA9"/>
                             <constraint firstItem="Ibc-Hy-eW5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="254-oQ-CiO"/>
-                            <constraint firstItem="5Ih-1N-8pf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="82" id="77g-BA-oP7"/>
+                            <constraint firstAttribute="trailing" secondItem="UVW-mM-0xR" secondAttribute="trailing" constant="6" id="3GO-yX-7sf"/>
                             <constraint firstItem="Ibc-Hy-eW5" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9zF-2W-v8b"/>
                             <constraint firstItem="kzg-Ec-EUF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="CLh-jQ-hsc"/>
                             <constraint firstItem="Ibc-Hy-eW5" firstAttribute="top" secondItem="kzg-Ec-EUF" secondAttribute="bottom" constant="27.670000000000002" id="IfE-xR-mfD"/>
-                            <constraint firstItem="5Ih-1N-8pf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="275" id="JBg-DU-Fpe"/>
                             <constraint firstItem="kzg-Ec-EUF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="156" id="N3l-SU-8JU"/>
-                            <constraint firstItem="kzg-Ec-EUF" firstAttribute="top" secondItem="5Ih-1N-8pf" secondAttribute="bottom" constant="4.3300000000000001" id="YBJ-Pe-Eq5"/>
+                            <constraint firstItem="kzg-Ec-EUF" firstAttribute="top" secondItem="hc8-F0-Fh8" secondAttribute="bottom" constant="4" id="fMH-uj-euG"/>
+                            <constraint firstItem="UVW-mM-0xR" firstAttribute="leading" secondItem="hc8-F0-Fh8" secondAttribute="trailing" constant="23" id="gle-Va-HNL"/>
                             <constraint firstItem="Ibc-Hy-eW5" firstAttribute="top" secondItem="kzg-Ec-EUF" secondAttribute="bottom" constant="27.670000000000002" id="hG4-Ru-q9h"/>
-                            <constraint firstAttribute="trailing" secondItem="5Ih-1N-8pf" secondAttribute="trailing" constant="6" id="wK8-7x-KGC"/>
+                            <constraint firstItem="kzg-Ec-EUF" firstAttribute="top" secondItem="UVW-mM-0xR" secondAttribute="bottom" constant="4.3300000000000001" id="mbQ-a7-Vv8"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="الرئيسية" image="house" catalog="system" id="zLG-ya-C3t">
@@ -1381,9 +1428,6 @@
         </systemColor>
         <systemColor name="systemGray3Color">
             <color red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGray4Color">
-            <color red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

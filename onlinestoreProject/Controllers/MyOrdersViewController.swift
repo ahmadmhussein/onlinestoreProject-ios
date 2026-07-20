@@ -69,11 +69,12 @@ class OrderCell: UITableViewCell {
     @IBOutlet weak var orderDateLabel: UILabel!
     @IBOutlet weak var orderTotalLabel: UILabel!
     
+    @IBOutlet weak var cardd: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.contentView.backgroundColor = .systemGray6
-        self.contentView.layer.cornerRadius = 8
-        self.contentView.frame = self.contentView.frame.inset(by: UIEdgeInsets(top: 8, left: 16, bottom: 8, right: 16))
+        
+        cardd.layer.cornerRadius = 8
+        cardd.layer.frame = cardd.layer.frame.inset(by: UIEdgeInsets(top: 8, left: 16, bottom: 8, right: 16))
     }
     
     func configure(with order: Order) {
